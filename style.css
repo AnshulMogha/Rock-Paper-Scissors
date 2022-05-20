@@ -1,0 +1,132 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+body
+{
+    font-size: 1vw;
+    background-image: linear-gradient(to bottom right, #e0e345, #b949ff);;
+    background-repeat:no-repeat;
+    width: 100vw;
+    height:100vh ;
+}
+#wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#wrapper>h1
+{
+    margin: 20px;
+    font-size: 1.5rem;
+}
+#btn-wrap
+{
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+    justify-content:space-around;
+    padding: 1.5rem;
+}
+.btn
+{
+    background-color: #0058f5;
+    padding: 1rem;
+    font-size: 2rem ;
+    border-radius: 8%;
+    box-shadow: gray 3px 3px 10px,-3px -3px 10px gray;
+}
+.btn:hover
+{
+    background-color: #838fa3;
+}
+.btn:active
+{
+    box-shadow: rgb(223, 222, 222) 3px 3px 10px,-3px -3px 10px rgb(228, 223, 223);
+}
+#result-wrap
+{
+    display: flex;
+}
+#result-wrap>div
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-wrap1>img,#img-wrap2>img
+{
+    height:36vw;
+    width: 36vw;
+    border-radius: 20%;
+    margin: 10px;
+    border: solid blue 5px;
+    
+}
+#img-wrap1>span,#img-wrap2>span
+{
+    font-size: 2rem;
+}
+#result-wrap>span
+{
+ font-size: 2rem;
+ padding-top: 5rem;
+}
+#resultString
+{
+    display: flex;
+    justify-content: center;
+}
+#result{
+    padding: 1rem;
+    font-size: 3rem;
+    
+}
+@media screen and (min-width:768px) and (max-width:999px) {
+    #result-wrap>span
+    {
+     font-size: 2rem;
+     padding-top: 9rem;
+    } 
+    #wrapper>h1
+{
+    margin: 20px;
+    font-size: 3rem;
+}
+}
+@media screen and (min-width:1000px) {
+    
+    #img-wrap1>img,#img-wrap2>img
+    {
+        height:25vw;
+        width: 25vw;
+        border-radius: 20%;
+        margin: 10px;
+        border: solid blue 5px;
+        
+    }
+    #wrapper>h1
+    {
+        margin: 20px;
+        font-size: 3.5rem;
+        
+    } 
+    #result-wrap>span
+    {
+     font-size: 2rem;
+     padding-top: 10rem;
+    }
+}
+.animationin
+{
+    opacity: 0;
+    transition: opacity .5s;
+}
+.animationout
+{
+    opacity: 1;
+    transition: opacity .5s;
+}
